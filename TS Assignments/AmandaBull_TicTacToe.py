@@ -284,21 +284,19 @@ def play_again():
             # user chooses to play again or not by typing in either the letter 'y' or 'n'
             answer = input("\nWould you like to play again? Enter (y) for yes or (n) for no: ").lower()
 
-            while True:
+            while answer == "y" or answer == "n":
                 # if the user wants to play again - program starts over
                 if answer == "y":
                     print("\nGreat! Let's play again!")
                     print("-------------------------------------------------------------------------------")
-                    game_status = "started"
+                    execute()
                     break
 
                 # if the user does not want to play again - program ends
-                elif answer == "n":
+                else:
                     print("\nThanks for playing!")
                     quit()
-                else:
-                    break
-            break
+            
 
 
         # exception handling - if the user did not choose either yes or no
@@ -308,20 +306,24 @@ def play_again():
 
 
 ## -- GAME EXECUTION --##
-while True:
-    # welcome message
-    print("Welcome to Tic Tac Toe!")
-    game_instructions()
 
-    # game setup
-    mode_choice = ""
-    player1 = ""
-    player2 = ""
-    turn = ""
-    game_mode()
-    first_turn()
+def execute():
+    while True:
+        # welcome message
+        print("Welcome to Tic Tac Toe!")
+        game_instructions()
 
-    # start game
-    letter = ""
-    boxes = ""
-    start_game()
+        # game setup
+        mode_choice = ""
+        player1 = ""
+        player2 = ""
+        turn = ""
+        game_mode()
+        first_turn()
+
+        # start game
+        letter = ""
+        boxes = ""
+        start_game()
+
+execute()
