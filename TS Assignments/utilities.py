@@ -212,10 +212,12 @@ def end_game():
             #prints the winning message and gameboard for user
             print("Congratulations! Player X: {} is the winner!".format(current_player))
             print_board(board)
-            play_again()
           
             #changes game_status to complete
             game_status = "complete"
+
+            #asks the user to play again
+            play_again()
             break
 
         #checks to see if Player X has 3 in a row (horizontal, vertical, diagonals)
@@ -231,10 +233,12 @@ def end_game():
             #prints the winning message and gameboard for user
             print("Congratulations! Player O: {} is the winner!".format(current_player))
             print_board(board)
-            play_again()
         
             #changes game_status to complete
             game_status = "complete"
+
+            #asks the user to play again
+            play_again()
             break
 
         #checks to see if all boxes have been filled
@@ -250,10 +254,12 @@ def end_game():
             #ends the game and declares there is a draw
             print("Congratulations! It is a tie!")
             print_board(board)
-            play_again()
-
+        
             #changes game_status to complete
             game_status = "complete"
+
+            #asks the user to play again
+            play_again()
             break
             
         #continues the game
@@ -262,8 +268,7 @@ def end_game():
 
 #--Asks the user if they want to play again--#
 def play_again():
-
-    while True:
+    
         #user chooses to play again or not by typing in either the letter 'y' or 'n'
         try:
             answer = input("\nWould you like to play again? Enter (y) for yes or (n) for no: ").lower()
@@ -273,6 +278,7 @@ def play_again():
                 if answer == "y":
                     print("\nGreat! Let's play again!")
                     print("-------------------------------------------------------------------------------")
+                    game_status = "started"
                     break
 
                 #if the user does not want to play again - program ends
@@ -281,8 +287,8 @@ def play_again():
                     quit()
                 else:
                     break
+            
 
         #exception handling - if the user did not choose either yes or no
         except ValueError:
             print("\nPlease enter either 'y' or 'n'.")
-            continue
