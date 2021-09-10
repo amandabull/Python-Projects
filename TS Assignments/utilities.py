@@ -128,7 +128,9 @@ def start_game():
 
         #current player inputs the box number of their chosen move
         try:
-            box_choice = int(input(("\nPlayer {}: {}, it is your turn. What is the number of the box you would like to mark? ".format(letter, current_player))))
+            if current_player == "Computer":
+                box_choice = random.randint(1, 9)
+            else: box_choice = int(input(("\nPlayer {}: {}, it is your turn. What is the number of the box you would like to mark? ".format(letter, current_player))))
 
             #if a valid box number is entered by user
             if 0 < box_choice < 10:
