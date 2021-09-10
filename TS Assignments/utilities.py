@@ -236,10 +236,15 @@ def end_game():
             break
 
         #checks to see if all boxes have been filled
-        elif board[0] and board[1] and board[2] and \
-        board[3] and board[4] and board[5] and \
-        board[6] and board[7] and board[8] != " ":
-
+        elif board[0] != " " and \
+        board[1] != " " and \
+        board[2] != " " and \
+        board[3] != " " and \
+        board[4] != " " and \
+        board[5] != " " and \
+        board[6] != " " and \
+        board[7] != " " and \
+        board[8] != " ":
             #ends the game and declares there is a draw
             print("Congratulations! It is a tie!")
             print_board(board)
