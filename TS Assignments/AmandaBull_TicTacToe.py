@@ -298,6 +298,7 @@ def play_again():
                     quit()
                 else:
                     break
+            break
 
 
         # exception handling - if the user did not choose either yes or no
