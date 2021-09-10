@@ -1,7 +1,7 @@
 ##-----------GAME SETUP-----------##
 
 import random
-
+    
 #--Explains the basic game instructions to the user(s)--#
 def game_instructions():
     print("\nGame Instructions: Player X will go first, followed by Player O.\nThe grid is numbered as seen below.")
@@ -292,3 +292,24 @@ def play_again():
         #exception handling - if the user did not choose either yes or no
         except ValueError:
             print("\nPlease enter either 'y' or 'n'.")
+
+
+##--PROGRAM EXECUTION--##
+while True:
+    #Welcome message
+    print("Welcome to Tic Tac Toe!")
+    game_instructions()
+
+    #Game setup
+    mode_choice = ""
+    player1 = ""
+    player2 = ""
+    turn = ""
+    game_mode()
+    first_turn()
+
+    #Start game
+    letter = ""
+    boxes = ""
+    start_game()
+
