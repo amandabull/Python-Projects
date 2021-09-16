@@ -3,8 +3,13 @@ These are some small projects I made using Python.
 
 **Projects**
 -----------
+- [Tic-Tac-Toe](https://github.com/amandabull/Python-Projects/blob/main/Technical%20Programming_TicTacToe.py)
 - [Phonebook](https://github.com/amandabull/Python-Projects/tree/main/project_phonebook)
 - [Checkbook](https://github.com/amandabull/Python-Projects/tree/main/Django_Checkbook)
+
+**Tic-Tac-Toe**
+
+This project is the classic game of Tic-Tac-Toe. Features include the ability to play with either a friend or against the computer. Users may also enter their name and opt to play again when the game is complete.
 
 **Phonebook**
 
