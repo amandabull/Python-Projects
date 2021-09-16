@@ -22,6 +22,6 @@ This project functions as a checkbook for user. It allows the user to make depos
 
 **Live Project**
 
-This was my contribution to the live project for The Tech Academy Python Developer bootcamp. We were tasked with creating a website that allows for various applications. Within my application, users have the ability to add, edit, delete and view entries within a database for Educational Technology.
+This project was created for The Tech Academy Python Developer bootcamp's live project. We were tasked with creating a website that allows for various applications. Within my application, users have the ability to add, edit, delete and view entries within a database for Educational Technology.
 
 -[Click here for screenshot images of what I created](https://github.com/amandabull/Python-Projects/tree/main/Live%20Project/Screenshots)
